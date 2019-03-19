@@ -47,9 +47,9 @@ public class Lavadoras extends Electrodomésticos {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Lavadoras(int precioBase, int peso, TipoColor color, TipoLetra consumo) {
+	public Lavadoras(int precioBase, int peso, TipoColor color, TipoLetra consumo ,int carga) {
 		super(precioBase, peso, color, consumo);
-		// TODO Auto-generated constructor stub
+		Carga = carga;
 	}
 
 	public Lavadoras(int precioBase, int peso) {
