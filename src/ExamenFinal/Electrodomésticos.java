@@ -54,31 +54,27 @@ public class Electrodomésticos {
 				+ Consumo + "]";
 	}
 
-	public int precioFinal(Electrodomésticos Electrodomestico) {
+	public int precioFinal() {
 		int PrecioFinal = 100;
-		if (Electrodomestico.Consumo.equals(TipoLetra.A)) {
+		if (Consumo.equals(TipoLetra.A)) {
 			PrecioFinal = +100;
-		} else if (Electrodomestico.Consumo.equals(TipoLetra.B)) {
+		} else if (Consumo.equals(TipoLetra.B)) {
 			PrecioFinal = +80;
-		} else if (Electrodomestico.Consumo.equals(TipoLetra.C)) {
+		} else if (Consumo.equals(TipoLetra.C)) {
 			PrecioFinal = +60;
-		} else if (Electrodomestico.Consumo.equals(TipoLetra.D)) {
+		} else if (Consumo.equals(TipoLetra.D)) {
 			PrecioFinal = +50;
-		} else if (Electrodomestico.Consumo.equals(TipoLetra.E)) {
+		} else if (Consumo.equals(TipoLetra.E)) {
 			PrecioFinal = +30;
-		} else if (Electrodomestico.Consumo.equals(TipoLetra.F)) {
+		} else if (Consumo.equals(TipoLetra.F)) {
 			PrecioFinal = +10;
 		}
 
-		while (Electrodomestico.Peso < 0) {
-			System.out.println("Tamaño no valido, numero demasiado pequeño");
-		}
-
-		if (Electrodomestico.Peso <= 19) {
+		if (Peso <= 19) {
 			PrecioFinal = +10;
-		} else if (Electrodomestico.Peso <= 49) {
+		} else if (Peso <= 49) {
 			PrecioFinal = +50;
-		} else if (Electrodomestico.Peso <= 79) {
+		} else if (Peso <= 79) {
 			PrecioFinal = +50;
 		} else {
 			PrecioFinal = +100;

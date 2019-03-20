@@ -59,9 +59,9 @@ public class Lavadoras extends Electrodomésticos {
 
 	public int precioFinal(Lavadoras Lavadora) {
 		if(Lavadora.Carga>8) {
-		return super.precioFinal(Electrodomestico)+50;
+		return super.precioFinal()+50;
 		}else {
-			return super.precioFinal(Electrodomestico);
+			return super.precioFinal();
 		}
 	}
 

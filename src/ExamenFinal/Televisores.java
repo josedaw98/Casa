@@ -5,12 +5,12 @@ public class Televisores extends Electrodomésticos {
 	enum TipoTDT {NORMAL, HD};
 	Electrodomésticos Electrodomestico = new Electrodomésticos();
 	
-	private int Tamaño = 20 ;
+	private int Pulgada = 20 ;
 	private TipoTDT TDT = TipoTDT.NORMAL;
 	
 
-	public int getTamaño() {
-		return Tamaño;
+	public int getPulgadas() {
+		return Pulgadas;
 	}
 
 	public TipoTDT getTDT() {
@@ -52,9 +52,9 @@ public class Televisores extends Electrodomésticos {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Televisores(int precioBase, int peso, TipoColor color, TipoLetra consumo ,int tamaño , TipoTDT tdt) {
+	public Televisores(int precioBase, int peso, TipoColor color, TipoLetra consumo ,int pulgada , TipoTDT tdt) {
 		super(precioBase, peso, color, consumo);
-		Tamaño=tamaño;
+		Pulgada=pulgada;
 		TDT = tdt;
 	}
 
@@ -63,9 +63,6 @@ public class Televisores extends Electrodomésticos {
 		// TODO Auto-generated constructor stub
 	}
 
-	public int precioFinal(Televisores Televisor) {
-		// TODO Auto-generated method stub
-		return super.precioFinal(Electrodomestico);
-	}
+
 
 }

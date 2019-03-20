@@ -4,7 +4,7 @@ public class Frigorificos extends Electrodomésticos {
 	
 	enum TipoFrigo {NORMAL , NOFROST};
 	
-		private TipoFrigo Tipo = TipoFrigo.NOFROST;
+		private TipoFrigo Tipo = TipoFrigo.NORMAL;
 		Electrodomésticos Electrodomestico = new Electrodomésticos();
 
 	@Override
@@ -62,9 +62,6 @@ public class Frigorificos extends Electrodomésticos {
 		// TODO Auto-generated constructor stub
 	}
 
-	public int precioFinal(Frigorificos Frigorifico) {
-		
-		return super.precioFinal(Electrodomestico);
-	}
+
 
 }
