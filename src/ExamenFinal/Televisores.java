@@ -9,8 +9,8 @@ public class Televisores extends Electrodomésticos {
 	private TipoTDT TDT = TipoTDT.NORMAL;
 	
 
-	public int getPulgadas() {
-		return Pulgadas;
+	public int getPulgada() {
+		return Pulgada;
 	}
 
 	public TipoTDT getTDT() {
